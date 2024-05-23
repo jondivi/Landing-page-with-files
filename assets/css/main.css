@@ -401,8 +401,8 @@ input, select, textarea {
 			}
 
 			#main .item.intro {
-				background-color: #d64760;
-				background-image: url("images/overlay.png");
+				background-color: rgb(215, 154, 14);
+				/* background-image: url("images/overlay.png"); */
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
@@ -447,6 +447,7 @@ input, select, textarea {
 					font-weight: 400;
 					line-height: 1em;
 					z-index: 2;
+					display: none;
 				}
 
 				#main .item.thumb img {
