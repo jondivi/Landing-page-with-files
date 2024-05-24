@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
 @import url("fontawesome-all.min.css");
 
-/*
-	Parallelism by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -83,10 +77,8 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
+		background: rgb(0,56,184);
+		background: linear-gradient(9deg, rgba(0,56,184,0.7399553571428572) 28%, rgba(255,255,255,0.8043811274509804) 58%, rgba(0,56,184,0.5858937324929971) 79%);
 		background-position: top left, bottom left, center center;
 		background-size: auto, 100% 100%, cover;
 		background-attachment: fixed;
@@ -184,6 +176,17 @@ input, select, textarea {
 		color: #fff;
 		color: rgba(255, 255, 255, 0.85);
 		font-weight: 600;
+	}
+
+/* Files */
+ul.files {
+	cursor: default;
+	margin: 0 0 0.5em 0;
+}
+	ul.files li {
+		display:center;
+		font-size: 2em;
+		margin-left: 1em;
 	}
 
 /* List */
@@ -401,7 +404,7 @@ input, select, textarea {
 			}
 
 			#main .item.intro {
-				background-color: rgb(215, 154, 14);
+				background-color: rgb(255,222,89);
 				/* background-image: url("images/overlay.png"); */
 				display: -moz-flex;
 				display: -webkit-flex;
@@ -420,11 +423,21 @@ input, select, textarea {
 
 				#main .item.intro h1 {
 					font-size: 3em;
+					font-weight: 900;
+					color: #0a0f1c;
+					line-height: 1em;
+				}
+
+				#main .item.intro h4 {
+					font-size: 1.25em;
+					font-weight: 500;
+					color: #0a0f1c;
 					line-height: 1em;
 				}
 
 				#main .item.intro p {
-					font-size: 1.25em;
+					font-size: 1em;
+					color: #0a0f1c;
 					line-height: 1.5em;
 					margin: 0.5em 0 0 0;
 					opacity: 0.65;
@@ -639,10 +652,11 @@ input, select, textarea {
 		#footer > section:last-child {
 			text-align: right;
 			max-width: 36em;
+			position: bottom right;
 		}
 
 		#footer h2 {
-			font-size: 2.25em;
+			font-size: 2em;
 			margin: 0 0 1em 0;
 		}
 
@@ -829,6 +843,15 @@ input, select, textarea {
 
 				.poptrox-popup .nav-previous {
 					display: none !important;
+				}
+
+				#logo {
+					height: 100%;
+					width: 100%;
+				}
+
+				.files {
+					font-weight: 900;
 				}
 
 		}
